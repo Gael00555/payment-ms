@@ -2,30 +2,6 @@
 
 Microservicio NestJS que crea sesiones de pago con Stripe Checkout y recibe la confirmación del cobro vía webhook.
 
-## Requisitos previos
-
-- Node.js 18+
-- Cuenta de Stripe (modo test)
-- Stripe CLI (para probar el webhook en local)
-
-## Instalación
-
-```bash
-npm install
-```
-
-## Configuración
-
-Copiar el archivo de variables de entorno:
-
-```bash
-cp .env.template .env
-```
-
-Completar `.env` con tus valores:
-- `STRIPE_SECRET`: clave secreta de tu cuenta de Stripe (modo test)
-- `STRIPE_ENDPOINT_SECRET`: se obtiene al correr `stripe listen` (ver más abajo)
-
 ## Levantar el proyecto
 
 ```bash
